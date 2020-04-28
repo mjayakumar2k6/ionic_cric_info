@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="players"></ion-back-button>
+    </ion-buttons>    
+    <ion-title>Player Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="./assets/images/{{playerId}}.jpg" />
+    <ion-card-header>
+      <ion-card-title>{{playerName}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{playerDetail}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

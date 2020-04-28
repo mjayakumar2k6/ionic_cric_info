@@ -4,9 +4,13 @@ import { HomePage } from './home.page';
 
 const routes: Routes = [
   {
+    path: ':id',
+    loadChildren: () => import('../pages/player-details/player-details.module').then( m => m.PlayerDetailsPageModule)
+  },
+  {
     path: '',
     component: HomePage,
-  }
+  } 
 ];
 
 @NgModule({
