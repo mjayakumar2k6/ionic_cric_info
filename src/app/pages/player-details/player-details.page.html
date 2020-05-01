@@ -4,6 +4,14 @@
       <ion-back-button defaultHref="players"></ion-back-button>
     </ion-buttons>    
     <ion-title>Player Details</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="openCamera()">
+        <ion-icon slot="icon-only" name="camera"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+
   </ion-toolbar>
 </ion-header>
 
@@ -18,4 +26,16 @@
       {{playerDetail}}
     </ion-card-content>
   </ion-card>
+
+  <ion-card *ngFor="let c of cameraImage">
+    <img [src]="c" />
+    <ion-card-header>
+      <ion-card-title>Test Image</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Image Captured
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

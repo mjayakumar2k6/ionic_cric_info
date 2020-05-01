@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Player } from './home.model';
 import { Router, ActivatedRoute } from '@angular/router';
 import { PlayerService } from '../services/player.service';
-import { runInThisContext } from 'vm';
 
 @Component({
   selector: 'app-home',

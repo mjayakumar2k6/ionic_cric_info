@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'players',
     pathMatch: 'full'
   },
+  {
+    path: 'camera',
+    loadChildren: () => import('./pages/camera/camera.module').then( m => m.CameraPageModule)
+  },
 ];
 
 @NgModule({
